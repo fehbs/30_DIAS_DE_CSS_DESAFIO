@@ -1,5 +1,5 @@
-# 30_DIAS_DE_CSS_DESAFIO
-##### 30_DIAS_DE_CSS_DESAFIO | font: Spruce Gabriela
+# <p align="center">30_DIAS_DE_CSS_DESAFIO
+##### <p align="end">30_DIAS_DE_CSS_DESAFIO | font: Spruce Gabriela
 
 
 

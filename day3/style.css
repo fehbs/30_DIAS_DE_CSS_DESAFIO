@@ -1,18 +1,14 @@
-body
-{
+body {
     margin: 0;
     padding: 0;
     background-color: black;
 }
 
 .container {
-display: flex;
-justify-content: space-between;
-align-items: stretch;
-padding-top: 1rem;
-width: 50%;
-height: 500px;
-margin-top: 3px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-imagem {
@@ -49,9 +45,9 @@ section {
     color: #eaffae;
     position: absolute;
     top: 0;
-    left: 0;
-    
+    left: 0;   
 }
+
 .sliding {
     position: absolute;
     top: 40%;
@@ -60,12 +56,10 @@ section {
     line-height: 220px;
     overflow: hidden;
     font-family: "arial black";
-    animation: animate 22s linear infinite;
-    
+    animation: animate 22s linear infinite;    
 }
 
-@keyframes animate
-{
+@keyframes animate {
     0%
     {
         transform: translate(0, -50%);
@@ -75,5 +69,6 @@ section {
         transform: translate(-50%, -50%);
     }
 }
+
 
 

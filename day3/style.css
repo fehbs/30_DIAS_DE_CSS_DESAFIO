@@ -56,18 +56,18 @@ section {
     color: #eaffae;
     position: absolute;
     top: 0;
-    left: 0;   
+    left: 0;  
 }
 
 .sliding {
     position: absolute;
     top: 40%;
     white-space: nowrap;
-    font-size: 7em;
+    font-size: 6em;
     line-height: 220px;
     overflow: hidden;
     font-family: "arial black";
-    animation: animate 22s linear infinite;       
+    animation: animate 19s linear infinite;       
 }
 
 @keyframes animate {

@@ -4,12 +4,15 @@ body {
     background-color: black;
     border-left: solid 1px;
     border-right: solid 1px;
+   
 }
 
 .botao-audio {
-    background-color: rgba(0,0,0,.50);
-    border: none;
-    padding:1px 1px;
+    margin-left: 1010px;
+    width: 120px;
+    height: 12px;
+    padding-top: 3px;
+    margin-top: 3px;
 }
 
 .container {
@@ -42,7 +45,7 @@ section {
     margin-top: 5px;
     flex-direction: center;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
 
 .wrapper {
@@ -77,5 +80,4 @@ section {
         transform: translate(-50%, -50%);
     }
 }
-
 

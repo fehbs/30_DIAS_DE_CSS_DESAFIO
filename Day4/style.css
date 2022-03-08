@@ -1,0 +1,173 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #353b48;
+}
+
+.container {
+    background-color: rgb(39, 39, 39);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper {
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/*  PINK BUTTON */
+
+.animated-button-pink {
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 200px;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.animated-button-pink::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 3px solid transparent;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.animated-button-pink::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 3px solid transparent;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+.animated-button-pink:hover::before {
+    height: 60px;
+    width: 220px;
+    border: 3px solid rgb(238, 40, 106);
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+
+.animated-button-pink:hover::after {
+    height: 60px;
+    width: 200px;
+    border: 3px solid rgb(238, 40, 106);
+    border-left: none;
+    border-top: none;
+    transition: height 0.2s linear, width 0.2s linear 0.5s;
+}
+
+/* GREEN BUTTON */
+
+.animated-button-green {
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 2px solid greenyellow;
+    color: wheat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.animated-button-green::before, .animated-button-green::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 14px;
+    background-color: rgb(39, 39, 39);
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.animated-button-green::before {
+    top: -2px;
+    left: 10%;
+}
+
+.animated-button-green::after {
+    bottom: -2px;
+    right: 10%;
+}
+
+.animated-button-green:hover::after {
+    right: 80%;
+}
+
+.animated-button-green:hover::before {
+    left: 80%;
+}
+
+/* PURPLE BUTTON */
+
+.animated-button-purple {
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 2px solid rgb(151, 54, 151);
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.animated-button-purple::before, .animated-button-purple::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 14px;
+    background-color: rgb(39, 39, 39);
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.animated-button-purple::before {
+    top: -2px;
+    left: 10%;
+}
+
+.animated-button-purple::after {
+    bottom: -2px;
+    right: 13%;
+}
+
+.animated-button-purple:hover::after {
+    right: 90%;
+}
+
+.animated-button-purple:hover::before {
+    left: 50%;
+}

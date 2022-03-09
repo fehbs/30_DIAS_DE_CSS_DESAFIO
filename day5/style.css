@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.button-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.on-button {
+    text-decoration: wavy;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(250, 190, 227);
+    letter-spacing: 1px;
+    background-color: rgb(219, 75, 159);
+    margin: 180px;
+    box-shadow: 0 0 0 0 rgba(229, 56, 245, 0.9);
+    transform: scale(2);
+    animation: pulse 3s infinite;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(247, 56, 231, 0.9);
+        transform: scale(0.95);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba(206, 83, 200, 0);
+        transform: scale(2);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(247, 56, 231, 0.9);
+        transform: scale(0.95);
+    }
+}
+
+

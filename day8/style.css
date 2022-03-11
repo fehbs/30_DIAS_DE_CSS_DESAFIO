@@ -1,0 +1,165 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #121922;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13%;
+    box-shadow: 10px 10px 10px  rgba(238, 14, 14, 0.267),
+                inset 13px 13px 13px  rgba(238, 14, 14, 0.267),
+                10px 10px 10px  rgba(238, 14, 14, 0.267),
+                inset 13px 13px 13px  rgba(238, 14, 14, 0.267);
+    position: relative;
+}
+
+.clock::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: rgb(209, 228, 231);
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.hour, .minute, .second {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1px;
+    height: 1px;
+}
+
+.second, .second__pointer {
+    width: 230px;
+    height: 230px;
+}
+
+.minute, .minute__pointer {
+    width: 190px;
+    height: 190px;
+}
+
+.hour, .hour__pointer {
+    width: 160px;
+    height: 160px;
+}
+
+.second__pointer, .minute__pointer, .hour__pointer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.second__pointer::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background-color: #ff105e;
+    border-radius: 6px;
+    z-index: 5;
+}
+
+.minute__pointer::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: darkmagenta;
+    border-radius: 6px;
+    z-index: 6;
+}
+
+.hour__pointer::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 83px;
+    background-color: rgb(114, 225, 233);
+    border-radius: 4px;
+    z-index: 7;
+}
+
+.clock__front {
+    position: absolute;
+}
+
+.clock__front span {
+    position: absolute;
+    font-size: 3rem;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.clock__front span:nth-child(1) {
+    top: -120px;
+}
+
+.clock__front span:nth-child(2) {
+    left: 120px;
+}
+
+.clock__front span:nth-child(3) {
+    top: 120px;
+}
+
+.clock__front span:nth-child(4) {
+    left: -120px;
+}
+
+.hour__pointer {
+    animation: animhour 60.012s linear infinite;
+}
+
+.minute__pointer {
+    animation: animinute 30.012s linear infinite;
+}
+
+.second__pointer {
+    animation: animsecond 15.000s linear infinite;
+}
+
+@keyframes animhour {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animinute {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animsecond {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
